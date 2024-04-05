@@ -46,8 +46,9 @@ export default async function Page() {
 
   return (
     <main className="bg-gray-50">
-      <Navbar1 />
-      <div className="container mx-auto pb-5 sm:pt-2">
+    
+      <div className="container mx-auto py-6 sm:pt-7">
+      <h1 className="text-black text-lg">Country Population Density</h1>
         <div className="flex justify-between">
           <h1></h1>
         </div>
