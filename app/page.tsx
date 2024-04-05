@@ -40,7 +40,6 @@ export default async function Page() {
     let density = calcDensity(country.population, country.area)
     densities.push(density);
     sum += density;
-    console.log(density)
     median = findMedian(densities)
     average = sum / densities.length;
   })

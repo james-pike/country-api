@@ -5,7 +5,6 @@ import {
   DoubleArrowRightIcon,
 } from "@radix-ui/react-icons"
 import { Table } from "@tanstack/react-table"
-
 import { Button } from "@/components/ui/button"
 import {
   Select,
@@ -30,7 +29,7 @@ export function DataTablePagination<TData>({
           <Select
             value={`${table.getState().pagination.pageSize}`}
             onValueChange={(value: any) => {
-              table.setPageSize(Number(value))
+              table.setPageSize(Number(value));
             }}
           >
             <SelectTrigger className="h-8 w-[70px]">
@@ -45,15 +44,11 @@ export function DataTablePagination<TData>({
             </SelectContent>
           </Select>
         </div>
-
       </div>
-
-
-      <div className="flex w-[100px] items-center justify-center text-sm font-medium">
-        Page {table.getState().pagination.pageIndex + 1} of{" "}
-        {table.getPageCount()}
-      </div>
-      <div className="flex items-center space-x-1">
+      <div className="flex flex-grow justify-end items-center space-x-1">
+      <div className="text-sm font-medium mr-1 sm:mr-5">
+          Page {table.getState().pagination.pageIndex + 1} of {table.getPageCount()}
+        </div>
         <Button
           variant="outline"
           className="hidden h-8 w-8 p-0 lg:flex"
@@ -92,6 +87,5 @@ export function DataTablePagination<TData>({
         </Button>
       </div>
     </div>
-
-  )
+  );
 }

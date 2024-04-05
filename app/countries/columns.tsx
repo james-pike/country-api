@@ -22,7 +22,10 @@ export const columns: ColumnDef<Country>[] = [
     },
     {
         accessorKey: "population",
-        header: "Population Density",
+        header: ({ column }) => {
+            return (    <div style={{ whiteSpace: 'nowrap' }}>Population Density</div>)
+        },
+        
         cell: ({ row }) => {
             const population: number = row.original.population;
             const area: number = row.original.area;
@@ -30,6 +33,7 @@ export const columns: ColumnDef<Country>[] = [
             return <div>{populationDensity.toFixed(1)} / km²</div>;
         },
     },
+    
     {
         accessorKey: "population",
         header: ({ column }) => (
