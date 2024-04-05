@@ -7,7 +7,6 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-import Navbar1 from "@/components/ui/navbar";
 import { Country, columns } from "./countries/columns";
 import { DataTable } from "./countries/data-table";
 
@@ -46,9 +45,8 @@ export default async function Page() {
 
   return (
     <main className="bg-gray-50">
-    
       <div className="container mx-auto py-6 sm:pt-7">
-      <h1 className="text-black text-lg">Country Population Density</h1>
+      <h1 className="text-black text-lg font-medium">Country Population Density API</h1>
         <div className="flex justify-between">
           <h1></h1>
         </div>
