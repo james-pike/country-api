@@ -22,7 +22,7 @@ export const columns: ColumnDef<Country>[] = [
     },
     {
         accessorKey: "population",
-        header: "Population Density (km²)",
+        header: "Population Density",
         cell: ({ row }) => {
             const population: number = row.original.population;
             const area: number = row.original.area;
@@ -43,7 +43,7 @@ export const columns: ColumnDef<Country>[] = [
     {
         accessorKey: "area",
         header: ({ column }) => (
-            <DataTableColumnHeader column={column} title="Area (km²)" />
+            <DataTableColumnHeader column={column} title="Area" />
         ),
         cell: ({ row }) => {
             const formattedArea: string = Number(row.original.area).toLocaleString();
