@@ -27,7 +27,7 @@ export const columns: ColumnDef<Country>[] = [
             const population: number = row.original.population;
             const area: number = row.original.area;
             const populationDensity: number = population / area;
-            return <div>{populationDensity.toFixed(2)} / km²</div>;
+            return <div>{populationDensity.toFixed(1)} / km²</div>;
         },
     },
     {

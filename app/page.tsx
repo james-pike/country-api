@@ -17,7 +17,6 @@ async function getData(): Promise<Country[]> {
   return data;
 }
 
-
 export default async function Page() {
   const data = await getData()
   let unMemberCount = 0;
@@ -79,11 +78,11 @@ export default async function Page() {
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Standard Deviation</CardTitle>
+              <CardTitle className="text-sm font-medium">Standard Deviation of Density</CardTitle>
               <BarChart3 className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{StandardDeviation(densities).toFixed(1)}</div>
+              <div className="text-2xl font-bold">{StandardDeviation(densities).toFixed(1)} / km²</div>
             </CardContent>
           </Card>
           <Card>
