@@ -1,8 +1,8 @@
 ## Documentation
 
-This Typescript & HTML/CSS program displays country population density data in a dashboard of cards and a table of country data with search, column sorting, filtering, and pagination to display population, area, density, and UN membership.
+Web application programmed in Typescript to calculate and display country population density in a dashboard of cards and a data-table with search, column sorting, filtering, and pagination to display population, area, density, standard deviation and UN membership.
 
-Setup in NodeJS below + test live demo at: [www.country-api4.vercel.app](https://country-api4.vercel.app)
+Setup in NodeJS below and test live demo at: [www.country-api4.vercel.app](https://country-api4.vercel.app)
 
 ## Setup Instructions (Nodejs)
 
@@ -18,7 +18,7 @@ npm install
 npm run dev
 ```
 
-Country Population Density API should be running in the localhost browser [http://localhost:3000](http://localhost:3000).
+Country Population Density API should now be running in the localhost browser [http://localhost:3000](http://localhost:3000).
 
 
 
